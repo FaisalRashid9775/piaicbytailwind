@@ -1,3 +1,6 @@
+import Footer from './compnent/Footer'
+import Header from './compnent/Header'
+import NewsLetter from './compnent/NewsLetter'
 import './globals.css'
 
 export const metadata = {
@@ -12,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+       <Header/> {children}
+       <NewsLetter/>
+       <Footer/> </body>
     </html>
   )
 }
